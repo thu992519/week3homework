@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* 桌機 */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  /* 平板 */
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  /* 手機 */
+  @media (max-width: 375px) {
+    max-width: 372px;
+  }
+}
+
+/*  layout */
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .col-md-10 {
+    width: 83.333%;
+  }
+}
+@media (max-width: 375px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/* utilities */
+.bg-primary {
+  background-color: #aa0601;
+}
+
+.bg-light {
+  background-color: #fbf2f2;
+}
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #650300;
+}
+
+/* 間距 */
+.mr-1 {
+  margin-right: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+.py-20 {
+  padding: 80px 0;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === */
+.btn {
+  padding: 16px;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  @media (max-width: 375px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.contact {
+  padding: 80px 0;
+  @media (max-width: 375px) {
+    padding: 40px 0;
+  }
+}
+
+.contact-content {
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.input-style {
+  background-color: transparent;
+  padding: 6px 12px;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.feedback {
+  resize: none;
+  min-height: 136px;
+}
+/*
+由於核取方塊在每個瀏覽器的預設樣式都不同，如果同學想做更精細客製化，可以參考看看 w3schools 的範例：
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
+
+.form-checkbox {
+  margin: 4px 4px 0 0;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  accent-color: #aa0601;
+}
+
+.form-btn {
+  max-width: 416px;
+}
+.form-btn:hover {
+  background-color: #650300;
+}

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;1,900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/* 開始寫CSS */
+.container{
+    /*PC*/
+    max-width: 1320px; /* 1296 +12+12 12是padding*/
+    margin: 0 auto;
+    padding: 0 12px;
+    /*pad*/
+    @media (max-width:768px) {
+        max-width: 720px;
+    }
+    /*cell*/
+    @media (max-width:375px) {
+        max-width: 372px;
+    }
+}
+.bg-primary{
+    background: #aa0601;
+}
+.navbar{
+    padding: 16px 0;
+    @media (max-width:768px) {
+        padding-bottom: 0;
+    }
+}
+.navbar-wrap{
+    display: flex;
+    justify-content: space-between;
+    /*pad*/
+    @media (max-width:768px) {
+        flex-direction: column;
+        /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        
+    }
+}
+.navbar-logo{
+    width: 80px;
+       /*pad*/
+    @media (max-width:768px) {
+        margin: 0 0 16px 16px;
+    }
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+       /*pad*/
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+    }
+}
+.navbar-item{
+    height: 100%;
+   /*pad*/
+    @media (max-width:768px) {
+        width: 50%;
+        margin-right:0px ;
+        border: 1px solid #fff
+    }
+}
+.navbar-link{
+    height: 100%;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 8px 32px;
+       /*pad*/
+    @media (max-width:768px) {
+        font-size: 16px;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+.navbar-link:hover{
+    opacity: 0.5;
+}
+.navbar-item:last-child .navbar-link {
+    padding-right: 0;
+  }
+  /* 上面header 下面contact */
+  .contact{
+    padding: 80px 0;
+    @media (max-width:375px) {
+        padding: 40px 0;
+    }
+  }
+  .bg-pink{
+    background: #fbf2f2;
+  }
+  .text-brown{
+    color: #650300;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .col-6{
+    width: 50%;
+  }
+  .table-media{
+    @media (max-width:768px) {
+        width: 83.333%;
+    }
+    @media (max-width:375px) {
+        width:100%;
+    }
+  }
+  
+
+
+  .title-h2{
+    font-size: 48px;
+    font-weight: 700;
+    @media (max-width:375px) {
+        font-size: 24px;
+    
+    }
+  }
+  .cont-txt{
+    font-size: 20px;
+    @media (max-width:768) {
+        font-size: 16px;
+    }
+  }
+  .input-style{
+    background-color: transparent;
+    padding: 6px 12px;
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .feedback{
+    resize: none;
+    min-height: 136px;
+  }
+  .checkbox{
+    margin: 4px 4px 0 0;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    accent-color: #aa0601;
+  }
+  .btn{
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+    max-width: 416px;
+  }
+  .btn:hover{
+    background: #650300;
+  }
+  
+
+  /* 上面contact 下面footer*/
+  .footer-nav li{
+    color: #fff;
+    font-size: 16px;
+    margin-right: 24px;
+  }
+  .flex-col{
+    flex-direction: column;
+   
+  }
+  .align-start{
+    align-items: flex-start;
+  }
+  .footer-txt{
+    color: #fff;
+    font-size: 36px;
+  }
+  .material-symbols-outlined{
+    font-size: 36px;
+    color: #fff;
+  }
+  /* 排版工具 */
+  .flex{
+    display: flex;
+    
+  }
+  .justify-between{
+    justify-content: space-between;
+  }
+  
+  .align-center{
+    align-items: center;
+  }
+  .mx-auto{
+    margin: 0 auto;
+  }
+  /* padding 1 4px 一單位都是4px */
+
+  .py-20{
+    padding: 80px 0;
+  }
+
+  .col-10{
+    width: 83.33%;
+  }
+  /* mb-1 margin-bottom 1 4px */
+  .mt-4{
+    margin-top: 16px;
+  }
+
+  .mr-1{
+    margin-right: 4px;
+  }
+  .mr-4{
+    margin-right: 16px;
+  }
+  .mr-5{
+    margin-right: 20px;
+  }
+  .mb-2{
+    margin-bottom: 8px;
+  }
+  .mb-4{
+    margin-bottom: 16px;
+  }
+  .mb-6{
+    margin-bottom: 24px;
+  }
+  .mb-12{
+    margin-bottom: 48px;
+  }
+  .mb-20{
+    margin-bottom: 80px;
+  }
+/*  */
+  .block{
+    display: block;
+  }
+
