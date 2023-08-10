@@ -170,11 +170,16 @@ a{
   
 
   /* 上面contact 下面footer*/
+  .phone{
+    width: 100%;
+  }
+
   .footer-nav li{
     color: #fff;
     font-size: 16px;
     margin-right: 24px;
   }
+
   .flex-col{
     flex-direction: column;
    
@@ -189,6 +194,13 @@ a{
   .material-symbols-outlined{
     font-size: 36px;
     color: #fff;
+  }
+  .copyright{
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    padding: 40px 0px;
+    border-top: 1px solid #fff;
   }
   /* 排版工具 */
   .flex{
@@ -228,6 +240,9 @@ a{
   .mr-5{
     margin-right: 20px;
   }
+  .mr-12{
+    margin-right: 48px;
+  }
   .mb-2{
     margin-bottom: 8px;
   }
@@ -236,6 +251,9 @@ a{
   }
   .mb-6{
     margin-bottom: 24px;
+  }
+  .mb-8{
+    margin-bottom: 32px;
   }
   .mb-12{
     margin-bottom: 48px;
@@ -247,4 +265,22 @@ a{
   .block{
     display: block;
   }
+  .footer-nav-tal{
 
+    @media (max-width:640px){
+      display:none
+    }
+  }
+  .phone-img{
+    /* display: none; */
+    @media (max-width:640) {
+      display: none;
+    }
+  }
+  .footer-txt{
+    @media (max-width:640) {
+      font-size: 16px;
+      
+    }
+  }
+  
