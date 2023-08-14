@@ -170,6 +170,17 @@ a{
   
 
   /* 上面contact 下面footer*/
+  .footer{
+      padding-top: 60px;
+    @media (max-width:768px) {
+      padding-top: 50px;
+    }
+    @media (max-width:375px) {
+      padding-top: 24px;
+    }
+    
+
+  }
   .phone{
     width: 100%;
   }
@@ -267,20 +278,30 @@ a{
   }
   .footer-nav-tal{
 
-    @media (max-width:640px){
+    @media (max-width:768px){
       display:none
     }
   }
   .phone-img{
-    /* display: none; */
-    @media (max-width:640) {
-      display: none;
+    display: none;
+    @media (max-width:768px) {
+      display: flex;
     }
   }
   .footer-txt{
-    @media (max-width:640) {
+    @media (max-width:768px) {
       font-size: 16px;
       
     }
   }
-  
+  .copyright{
+    @media (max-width:375px) {
+      flex-direction: column;
+    }
+  }
+  .copy-right{
+    @media (max-width:375px) {
+      font-size: 16px;
+      flex-direction: column;
+    }
+  }
